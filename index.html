@@ -4,6 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Diapasón Taller</title>
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="manifest" href="manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Diapasón">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0A0D13">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Manrope:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>
@@ -30,7 +38,7 @@ button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid 
 /* Barra superior */
 .top{position:sticky; top:0; z-index:20; padding:calc(10px + var(--safe-t)) 18px 10px; display:flex; align-items:center; gap:12px; background:linear-gradient(var(--bg) 70%, transparent)}
 .brand{display:flex; align-items:center; gap:10px; margin-right:auto}
-.logo{width:36px; height:36px; border-radius:11px; background:linear-gradient(140deg,var(--accent),var(--root)); display:grid; place-items:center}
+.logo{width:36px; height:36px; border-radius:11px; background:linear-gradient(135deg,#FFC24B,#FF6B57); display:grid; place-items:center}
 .brand h1{font:800 18px/1 var(--display); margin:0; letter-spacing:-.01em}
 .brand small{display:block; color:var(--muted); font:600 12px var(--body); margin-top:3px}
 .keybtn{display:flex; align-items:center; gap:10px; border:1px solid var(--line); background:var(--surface); color:var(--ink); border-radius:14px; padding:6px 12px 6px 6px; cursor:pointer}
@@ -237,7 +245,7 @@ ol.routine b{font:800 15px var(--display); color:var(--accent); font-variant-num
 <body>
 <header class="top">
   <div class="brand">
-    <div class="logo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1206" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/><circle cx="9" cy="7" r="1.6" fill="#1A1206"/><circle cx="15" cy="12" r="1.6" fill="#1A1206"/><circle cx="11" cy="17" r="1.6" fill="#1A1206"/></svg></div>
+    <div class="logo"><svg width="24" height="24" viewBox="0 0 512 512" aria-hidden="true"><defs><mask id="lc"><rect width="512" height="512" fill="#fff"/><circle cx="256" cy="258" r="30" fill="#000"/><rect x="221" y="352" width="70" height="13" rx="6.5" fill="#000"/></mask></defs><g transform="translate(256 262) rotate(38) scale(.9) translate(-256 -236)" fill="#121212" mask="url(#lc)"><ellipse cx="256" cy="352" rx="112" ry="100"/><ellipse cx="256" cy="236" rx="84" ry="78"/><rect x="240" y="62" width="32" height="180" rx="4"/><rect x="226" y="14" width="60" height="66" rx="14"/></g></svg></div>
     <div><h1>Diapasón Taller</h1><small>Tocá cualquier nota para escucharla</small></div>
   </div>
   <button type="button" class="keybtn" id="keyBtn" aria-label="Cambiar tonalidad"><b id="keyName">La</b><span>Tono</span></button>
